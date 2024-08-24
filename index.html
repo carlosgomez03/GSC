@@ -13,21 +13,32 @@
             padding: 0;
         }
         .container {
-            width: 90%;
+            width: 80%;
             margin: auto;
             overflow: hidden;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
-            padding-top: 30px;
+            background: #ffffff;
+            color: #C22316;
+            padding: 20px;
             min-height: 70px;
             border-bottom: #e8491d 3px solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         header h1 {
-            text-align: center;
+            display: flex;
+            align-items: center;
             margin: 0;
             font-size: 36px;
+            flex: 1;
+            text-align: center;
+        }
+        header img {
+            max-width: 100px;
+            max-height: 70px;
+            margin-right: 20px;
         }
         .section {
             padding: 30px;
@@ -102,7 +113,10 @@
 <body>
 
     <header>
-        <h1>Global Supplier Company, S.A. de C.V.</h1>
+        <h1>
+            <img src="Logo GSC.png" alt="Logo" style="max-width: 100px; max-height: 70px;">
+            Global Supplier Company, S.A. de C.V.
+        </h1>
     </header>
 
     <div class="container">
