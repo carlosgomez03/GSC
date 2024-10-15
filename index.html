@@ -122,10 +122,53 @@
             font-size: 18px;
         }
         @media screen and (max-width: 600px) {
-        .products-grid {
-        grid-template-columns: 1fr;
+            .products-grid {
+            grid-template-columns: 1fr;
+            }
         }
+        .reasons-container {
+            display: flex;
+            justify-content: space-around; /* Distribuye los elementos horizontalmente */
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
         }
+
+        .reason {
+            flex: 1 1 30%; /* Ocupa un 30% del ancho, pero es flexible */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            max-width: 300px; /* Límite máximo para pantallas más grandes */
+        }
+
+        .reason img {
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .reason h3 {
+            font-size: 22px;
+            color: #000000;
+        }
+
+        /* Para pantallas más pequeñas, ajusta el tamaño */
+        @media screen and (max-width: 768px) {
+            .reason {
+                flex: 1 1 45%; /* Ocupa el 45% del ancho en pantallas medianas */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .reason {
+                flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas muy pequeñas (celulares) */
+            }
+        }
+
+
     </style>
 </head>
 <body>
@@ -185,12 +228,21 @@
         </section>
 
         <section class="section">
-            <h2>Por qué Elegirnos</h2>
-            <ul>
-                <li><strong>Garantía</strong>
-                <li><strong>Calidad</strong>
-                <li><strong>Servicio</strong>
-            </ul>
+            <h2>¿Por qué elegirnos?</h2>
+            <div class="reasons-container">
+                <div class="reason">
+                    <img src="Check.png" alt="Garantía">
+                    <h3>Garantía</h3>
+                </div>
+                <div class="reason">
+                    <img src="Escudo.png" alt="Calidad">
+                    <h3>Calidad</h3>
+                </div>
+                <div class="reason">
+                    <img src="Hands.png" alt="Servicio">
+                    <h3>Servicio</h3>
+                </div>
+            </div>
         </section>
 
         <section class="section contact-info">
