@@ -40,7 +40,7 @@
         }
         @media screen and (max-width: 600px) {
         header h1 {
-            font-size: 24px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+            font-size: 24px;
         }
         }
         header img {
@@ -82,7 +82,7 @@
         }
         .product-item img {
         width: 100%;
-        height: 250px;
+        height: 200px;
         object-fit: contain;
         border-radius: 10px;
         margin-bottom: 10px;
@@ -91,10 +91,10 @@
         .product-item:hover {
             transform: translateY(-5px);
         }
-        .product-item h3 {
-            font-size: 20px;
+        .product-item h4 {
+            font-size: 14px;
             color: #35424a;
-            margin: 10px 0;
+            margin: 5px 0;
         }
         footer {
             background: #35424a;
@@ -128,21 +128,21 @@
         }
         .reasons-container {
             display: flex;
-            justify-content: space-around; /* Distribuye los elementos horizontalmente */
+            justify-content: space-around;
             align-items: center;
             text-align: center;
-            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+            flex-wrap: wrap;
         }
 
         .reason {
-            flex: 1 1 30%; /* Ocupa un 30% del ancho, pero es flexible */
+            flex: 1 1 30%;
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             box-sizing: border-box;
-            max-width: 300px; /* Límite máximo para pantallas más grandes */
+            max-width: 300px;
         }
 
         .reason img {
@@ -155,16 +155,15 @@
             color: #000000;
         }
 
-        /* Para pantallas más pequeñas, ajusta el tamaño */
         @media screen and (max-width: 768px) {
             .reason {
-                flex: 1 1 45%; /* Ocupa el 45% del ancho en pantallas medianas */
+                flex: 1 1 45%;
             }
         }
 
         @media screen and (max-width: 480px) {
             .reason {
-                flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas muy pequeñas (celulares) */
+                flex: 1 1 100%;
             }
         }
 
@@ -194,35 +193,39 @@
             <div class="products-grid">
                 <a href="https://www.ecuatran.com/es/" target = "_blank" class="product-item">
                     <img src="ECUATRAN.jpg" alt="Imagen ECUATRAN">
-                    <h2>Transformadores ECUATRAN</h2>
+                    <h4>Transformadores de Distribución y Padmounted monofásicos y trifásicos</h4>
                 </a>
                 <a href="https://www.intelli.com.br/" target = "_blank" class="product-item">
                     <img src="Grupo Intelli.png" alt="Grupo Intelli">
-                    <h2>Grupo Intelli</h2>
+                    <h4>Barras Polo Tierra UL y NO UL - Terminales de ojo - Cepos - Conectores</h4>
                 </a>
                 <a href="https://ppcinsulators-santana.com/" target = "_blank" class="product-item">
                     <img src="PPC Santana.png" alt="PPC Santana">
-                    <h2>PPC Santana</h2>
+                    <h4>Aisladores Line Post - Aisladores tipo pin - Tensores - Aisladores de Carrete Secundario</h4>
                 </a>
                 <a href="https://tuboscolmena.com/" target = "_blank" class="product-item">
                     <img src="Colmena.png" alt="Colmena">
-                    <h2>Tubos Colmena</h2>
+                    <h4>Tubería IMC EMT RIGID Certificadas UL</h4>
                 </a>
                 <a href="https://automation.honeywell.com/us/en/products/personal-protective-equipment/impact-by-honeywell/electrical-safety" target = "_blank" class="product-item">
                     <img src="Salisbury.png" alt="Salisbury">
-                    <h2>Salisbury</h2>
+                    <h4>Guantes (Clase 0 - 4) - Caretas - Trajes - Mangas</h4>
                 </a>
                 <a href="https://www.glground.co/" target = "_blank" class="product-item">
                     <img src="Ground Lightning.png" alt="Ground Lightning">
-                    <h2>Ground Lightning</h2>
+                    <h4>Pararrayos Atmosféricos (Fluidor - Apantallador) - Aglomerante conductivo (Cemento de polarización)</h4>
                 </a>
                 <a href="https://www.band-it-idex.com/" target = "_blank" class="product-item">
                     <img src="Band It.jpg" alt="BAND-IT">
-                    <h2>BAND-IT</h2>
+                    <h4>Cintas - Hebillas - Herramientas</h4>
                 </a>
                 <a href="https://conextube.com/" target = "_blank" class="product-item">
                     <img src="Conextube.jpg" alt="Conextube">
-                    <h2>Conextube</h2>
+                    <h4>Cajas de Derivación para acometidas en BT </h4>
+                </a>
+                <a href="https://www.te.com/" target = "_blank" class="product-item">
+                    <img src="TE.png" alt="TE">
+                    <h4>Aisladores Poliméricos - Pararrayos de Distribución - Red de Tierra - Fotoceldas</h4>
                 </a>
             </div>
         </section>
@@ -247,14 +250,9 @@
 
         <section class="section contact-info">
             <h2>Contáctanos</h2>
-            <p><strong>Teléfono:</strong> +503 7874-8056</p>
-            <p><strong>Correo Electrónico:</strong> santosgomez@gsc.com.sv</p>
-            <p><strong>Dirección:</strong> El Salvador</p>
-        </section>
-
-        <section class="section">
-            <h2>¡Solicita tu Cotización Hoy Mismo!</h2>
-            <p>Llama al +503 7874-8056 o envíanos un correo a <strong>santosgomez@gsc.com.sv</strong> para recibir una cotización personalizada.</p>
+            <p><strong>Teléfono:</strong> +503 7874 8056</p>
+            <p><strong>Correo Electrónico:</strong><a href = "mailto:santosgomez@gsc.com"> santosgomez@gsc.com.sv</a></p>
+            <p><strong>Dirección:</strong> Local 1E Zona Franca Santa Tecla, Km 12 1/2 Carretera a Puerto La Libertad, El Salvador, Centro América</p>
         </section>
 
     </div>
